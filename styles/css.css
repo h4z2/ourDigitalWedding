@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.back-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* .page-dsgn {
+} */
+
+/* .nav-section {
+} */
+
+/* .content-section {
+} */
+
+.title-card {
+    background-color: white;
+    position: center;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    padding: 3%;
+    opacity: 70%;
+}
+
+.section-card {
+    margin-top: 25%;
+    background-color: white;
+}
+
+/* .ourStory {
+} */
+
+/* .details {
+} */
+
+/* .rsvp {
+} */
+
+.display-1 {
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.display-6 {
+    font-size: 1.5rem;
+}
