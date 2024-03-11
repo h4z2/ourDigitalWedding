@@ -23,9 +23,9 @@
     <section class="page-dsgn container-fluid p-0">
         <!-- Navigation menu -->
         <section class="nav-section p-2">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light rounded-2">
                 <div class="container-fluid">
-                    <a class="navbar-brand">Stella & Harry</a>
+                    <a class="navbar-brand"><strong>Stella & Harry<strong></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -36,6 +36,7 @@
                             <a class="nav-link" href="#ourStory">Our Story</a>
                             <a class="nav-link" href="#details">Details</a>
                             <a class="nav-link" href="#rsvp">RSVP</a>
+                            <a class="nav-link" href="#rsvp">FAQ's</a>
                         </div>
                     </div>
                 </div>
@@ -43,38 +44,67 @@
         </section>
         <!-- Content section -->
         <section class="content-section">
-            <div class="title-card container text-center">
+            <!-- Title card -->
+            <div class="title-card container text-center rounded-4">
                 <div>
-                <h5 class="display-6">Come celebrate our wedding!</h5>
-                <h1 class="display-1">Stella & Harry<h1>
-                <h6 class="display-6">May 10th 2025</h6>
+                    <h5 class="display-6">Come celebrate our wedding!</h5>
+                    <h1 class="display-1">Stella & Harry<h1>
+                            <h6 class="display-6">May 10th 2025</h6>
                 </div>
             </div>
-            <!-- Our story section -->
-            <section id="ourStory">
-                <div class="section-card row">
-                    <div class="col">
-                    <h4 class="display-4">Our Story</h4>
+            <div class="bg-light">
+                <!-- Our story section -->
+                <section id="ourStory">
+                    <div class="section-card row">
+                        <div class="col">
+                            <h4 class="display-4 text-center">Our Story</h4>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- Details section -->
-            <section id="details">
-                <div class="section-card row">
-                    <div class="col">
-                    <h4 class="display-4">The Venue:</h4>
-                    <h3>National Carillion, Queen Elizabeth II Island, Lake Burley Griffin</h3>
+                </section>
+                <!-- Details section -->
+                <section id="details">
+                    <div class="section-card row">
+                        <div class="col">
+                            <h4 class="display-4 text-center">Details</h4>
+                            <h1>The Venue:</h1>
+                            <h3>National Carillion, Queen Elizabeth II Island, Lake Burley Griffin</h3>
+                            <h3>Canberra ACT</h3>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- RSVP Section -->
-            <section id="rsvp">
-                <div class="section-card row">
-                    <div class="col">
-                        <h4 class="display-4">RSVP</h4>
+                </section>
+                <!-- RSVP Section -->
+                <section id="rsvp">
+                    <div class="section-card row">
+                        <div class="col">
+                            <h4 class="display-4 text-center">RSVP</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label">Name of guests</label>
+                                    <textarea class="form-control" id="nameInput" rows="1"></textarea>
+                                </div>
+                                <label for="flexRadioDefault" class="form-label">Can you make it?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">No</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <!-- FAQ Section -->
+                <section id="faq">
+                    <div class="section-card row">
+                        <div class="col">
+                            <h4 class="display-4 text-center">Frequently Asked Questions</h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </section>
     </section>
     <!-- Background image -->

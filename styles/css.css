@@ -23,15 +23,15 @@ body {
 .title-card {
     background-color: white;
     position: center;
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin-top: 15%;
+    margin-bottom: 35%;
     padding: 3%;
     opacity: 70%;
 }
 
 .section-card {
     margin-top: 25%;
-    background-color: white;
+    padding: 1%;
 }
 
 /* .ourStory {
