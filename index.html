@@ -20,10 +20,10 @@
 
 <body>
     <!-- Page design -->
-    <section class="page-dsgn container-fluid p-0">
+    <section class="page-dsgn">
         <!-- Navigation menu -->
-        <section class="nav-section p-2">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light rounded-2">
+        <section class="nav-section container-fluid pb-5 ps-5 pe-5">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light rounded-2 border border-2 border-black shadow">
                 <div class="container-fluid">
                     <a class="navbar-brand"><strong>Stella & Harry<strong></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,7 +43,7 @@
             </nav>
         </section>
         <!-- Content section -->
-        <section class="content-section">
+        <section class="content-section p-5">
             <!-- Title card -->
             <div class="title-card container text-center rounded-4">
                 <div>
@@ -69,6 +69,14 @@
                             <h1>The Venue:</h1>
                             <h3>National Carillion, Queen Elizabeth II Island, Lake Burley Griffin</h3>
                             <h3>Canberra ACT</h3>
+                            <p>
+                                Times 1:00 - 4:00
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.30102676665!2d149.13920837738448!3d-35.29850099452554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d3d87d0bc11%3A0x628fffe6c7d56938!2sNational%20Carillon!5e0!3m2!1sen!2sau!4v1714881616151!5m2!1sen!2sau"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -84,11 +92,13 @@
                                 </div>
                                 <label for="flexRadioDefault" class="form-label">Can you make it?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">Yes</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2">No</label>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>

@@ -14,8 +14,10 @@ body {
 /* .page-dsgn {
 } */
 
-/* .nav-section {
-} */
+.nav-section {
+    position: fixed;
+    top: 0;
+}
 
 /* .content-section {
 } */
@@ -26,7 +28,6 @@ body {
     margin-top: 15%;
     margin-bottom: 35%;
     padding: 3%;
-    opacity: 70%;
 }
 
 .section-card {
@@ -39,6 +40,17 @@ body {
 
 /* .details {
 } */
+
+iframe {
+    float: right;
+}
+
+@media (min-width: 1250px) {
+    iframe {
+        width: 450px;
+        height: 450px;
+    }
+}
 
 /* .rsvp {
 } */
