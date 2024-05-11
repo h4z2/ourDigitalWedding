@@ -23,7 +23,8 @@
     <section class="page-dsgn">
         <!-- Navigation menu -->
         <section class="nav-section container-fluid pb-5 ps-5 pe-5">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light rounded-2 border border-2 border-black shadow">
+            <nav
+                class="navbar navbar-expand-lg bg-body-tertiary bg-light rounded-2 border border-2 border-black shadow">
                 <div class="container-fluid">
                     <a class="navbar-brand"><strong>Stella & Harry<strong></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -85,23 +86,11 @@
                     <div class="section-card row">
                         <div class="col">
                             <h4 class="display-4 text-center">RSVP</h4>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="nameInput" class="form-label">Name of guests</label>
-                                    <textarea class="form-control" id="nameInput" rows="1"></textarea>
-                                </div>
-                                <label for="flexRadioDefault" class="form-label">Can you make it?</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">Yes</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">No</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                            <form method="POST"
+                                action="https://script.google.com/macros/s/AKfycbxOb5-cHcS1WTLE59r9p4vFKnYDLD2P4E6XKL6h53sEpyhppbI6SCZK7v5YIKsojcQ7dw/exec">
+                                <input name="Email" type="email" placeholder="Email" required>
+                                <input name="Name" type="text" placeholder="Name" required>
+                                <button type="submit">Send</button>
                             </form>
                         </div>
                     </div>
@@ -111,6 +100,32 @@
                     <div class="section-card row">
                         <div class="col">
                             <h4 class="display-4 text-center">Frequently Asked Questions</h4>
+                            <p>
+                                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" aria-expanded="false"
+                                    aria-controls="faq1">
+                                    Where should we park?
+                                </button>
+                            </p>
+                            <div class="collapse" id="faq1">
+                                <div class="card card-body">
+                                    There is plenty of parking all around the lake, we ask that you please leave the
+                                    closest parking to those who need it. Thank you.
+                                </div>
+                            </div>
+                            <p>
+                                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2" aria-expanded="false"
+                                    aria-controls="faq2">
+                                    Where should we park?
+                                </button>
+                            </p>
+                            <div class="collapse" id="faq2">
+                                <div class="card card-body">
+                                    There is plenty of parking all around the lake, we ask that you please leave the
+                                    closest parking to those who need it. Thank you.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
