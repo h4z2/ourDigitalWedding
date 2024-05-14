@@ -1,54 +1,9 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(44, 78, 44);
 }
 
-.back-vid {
-    position: absolute;
-    top: 0;
-    left: 0;
+.content {
     width: 100%;
-    z-index: -1;
-}
-
-/* .page-dsgn {
-} */
-
-.nav-section {
-    position: fixed;
-    top: 0;
-}
-
-.title-card {
-    position: center;
-    margin-top: 15%;
-    margin-bottom: 35%;
-    padding: 3%;
-    background-color: rgb(255, 255, 255, 0.5);
-}
-
-.section-card {
-    padding: 1%;
-}
-
-.body {
-    background-color: white;
-}
-
-#ourStory {
-    border-bottom: 20px solid rgb(44, 78, 44);
-}
-
-#details {
-    border-bottom: 20px solid rgb(44, 78, 44);
-}
-
-#rsvp {
-    border-bottom: 20px solid rgb(44, 78, 44);
-}
-
-iframe {
-    float: right;
 }
 
 @media (min-width: 1250px) {
@@ -56,14 +11,4 @@ iframe {
         width: 450px;
         height: 450px;
     }
-}
-
-.display-1 {
-    font-size: 7rem;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.display-6 {
-    font-size: 1.5rem;
 }
