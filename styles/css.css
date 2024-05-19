@@ -6,9 +6,52 @@ body {
     width: 100%;
 }
 
+.head-vid {
+    background-color: rgb(44, 73, 44);
+}
+
+.video {
+    height: 625px;
+}
+
+@media (max-width: 1250px) {
+.video {
+    display: none;
+    }
+}
+
+.btn {
+    background-color: rgb(44, 73, 44);
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    background-color: rgb(75, 121, 75);
+}
+
+.input {
+    border: rgb(44, 73, 44) solid;
+    border-radius: 10px;
+}
+
+.input:focus {
+    border-color: rgb(75, 121, 75) solid;
+    outline: none;
+}
+
+.map {
+    border: rgb(44, 73, 44) solid;
+    border-radius: 10px;
+}
+
 @media (min-width: 1250px) {
     iframe {
-        width: 450px;
-        height: 450px;
+        width: 700px;
+        height: 600px;
     }
+}
+
+iframe {
+    height: 300px;
+    width: 300px;
 }
