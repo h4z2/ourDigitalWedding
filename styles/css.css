@@ -1,5 +1,14 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    border-left: 25px rgb(44, 73, 44) solid;
+    border-right: 25px rgb(44, 73, 44) solid;
+}
+
+@media (min-width: 1250px) {
+    body {
+        border-left: 50px rgb(44, 73, 44) solid;
+        border-right: 50px rgb(44, 73, 44) solid;
+    }
 }
 
 .content {
@@ -11,8 +20,8 @@ body {
 }
 
 @media (max-width: 1250px) {
-.video {
-    display: none;
+    .video {
+        display: none;
     }
 }
 
@@ -35,6 +44,22 @@ body {
     outline: none;
 }
 
+.img {
+    width: 85%;
+    height: 85%;
+}
+
+.images {
+    float: left;
+}
+
+@media (min-width: 1250px) {
+    .img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
 .map {
     border: rgb(44, 73, 44) solid;
     border-radius: 10px;
@@ -53,8 +78,8 @@ iframe {
 }
 
 .foot-img {
-    height: 25%;
-    width: 25%;
+    height: 80%;
+    width: 80%;
 }
 
 @media (min-width: 1250px) {
