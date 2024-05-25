@@ -6,10 +6,6 @@ body {
     width: 100%;
 }
 
-.head-vid {
-    background-color: rgb(44, 73, 44);
-}
-
 .video {
     height: 625px;
 }
@@ -54,4 +50,16 @@ body {
 iframe {
     height: 300px;
     width: 300px;
+}
+
+.foot-img {
+    height: 25%;
+    width: 25%;
+}
+
+@media (min-width: 1250px) {
+    .foot-img {
+        width: 35%;
+        height: 35%;
+    }
 }
