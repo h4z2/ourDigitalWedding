@@ -44,42 +44,31 @@ body {
     outline: none;
 }
 
-.img {
-    width: 85%;
-    height: 85%;
-}
-
 .images {
     float: left;
 }
 
+.img {
+    width: 300px;
+    height: 200px;
+}
+
 @media (min-width: 1250px) {
     .img {
-        width: 40%;
-        height: 40%;
+        height: 400px;
+        width: 475px;
     }
 }
 
 .map {
     border: rgb(44, 73, 44) solid;
-    border-radius: 10px;
-}
-
-@media (min-width: 1250px) {
-    iframe {
-        width: 700px;
-        height: 600px;
-    }
-}
-
-iframe {
-    height: 300px;
-    width: 300px;
+    border-radius: 20px;
 }
 
 .foot-img {
     height: 80%;
     width: 80%;
+     border-radius: 20px;
 }
 
 @media (min-width: 1250px) {
