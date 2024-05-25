@@ -11,6 +11,10 @@ body {
     }
 }
 
+.navbar {
+    border-bottom: 5px rgb(44, 73, 44) solid;
+}
+
 .content {
     width: 100%;
 }
@@ -21,7 +25,8 @@ body {
 
 @media (max-width: 1250px) {
     .video {
-        display: none;
+        height: 170px;
+        width: 300px;
     }
 }
 
