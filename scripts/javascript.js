@@ -18,30 +18,27 @@ updateCountdown(); // Initial call
 setInterval(updateCountdown, 1000);
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('rsvp-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const form = event.target;
-        fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form)
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.result === 'success') {
-                    window.location.href = data.redirect;
-                } else {
-                    alert('An error occurred: ' + data.error);
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            });
+window.addEventListener("load", function() {
+    const form = document.getElementById('rsvp-form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(response => response.json())
+      .then((responseData) => {
+        if(responseData.result === 'success') {
+          alert("Success!");
+        } else {
+          alert("Error: " + responseData.error);
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert("There was an error submitting the form.");
+      });
     });
-});
+  });
