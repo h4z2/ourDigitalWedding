@@ -32,6 +32,7 @@ window.addEventListener("load", function() {
       .then((responseData) => {
         if(responseData.result === 'success') {
           alert("Success!");
+          form.reset();
         } else {
           alert("Error: " + responseData.error);
         }
@@ -42,3 +43,9 @@ window.addEventListener("load", function() {
       });
     });
   });
+
+
+  document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the form from submitting immediately
+    alert('Thank you for your RSVP!');
+});
